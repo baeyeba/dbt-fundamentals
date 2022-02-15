@@ -1,4 +1,3 @@
--- status oplijsten per customer
 {% set status_values = ['returned','completed','return_pending','shipped','placed'] -%}
 with orders as (
     select * from {{ ref('stg_orders')}} 
